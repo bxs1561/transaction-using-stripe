@@ -1,5 +1,5 @@
 const express = require("express");
-const stripe = require("stripe")("sk_test_51HjYYuJXnhrs42nh7rBYbIGYoTzd4LAIwvd9HxsJ4hmHopWOu4dUMfC1DWJFgOisl4989drcugri92wL20VqGIhZ00yCNCEu9D");
+const stripe = require("stripe")(process.env.SECRET_KEY);
 const bodyParser = require("body-parser");
 const expressHandlebars = require("express-handlebars");
 
